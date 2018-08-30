@@ -62,7 +62,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <useSystemClassLoader>true</useSystemClassLoader>
-                    <argLine>${jacocoArgLine} -javaagent:${settings.localRepository}/org/powermock/powermock-module-javaagent/${powermock.version}/powermock-module-javaagent-${powermock.version}.jar -noverify -Xmx1024m</argLine>
+                    <argLine>@{jacocoArgLine} -javaagent:${settings.localRepository}/org/powermock/powermock-module-javaagent/${powermock.version}/powermock-module-javaagent-${powermock.version}.jar -noverify -Xmx1024m</argLine>
                     <trimStackTrace>false</trimStackTrace>
                     <includes>
                         <include>**/*Test.java</include>

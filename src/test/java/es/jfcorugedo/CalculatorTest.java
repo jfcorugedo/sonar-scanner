@@ -36,4 +36,17 @@ public class CalculatorTest
         //then
         assertThat(result, is(0));
     }
+
+    @Test
+    public void testTimes() {
+
+        //given
+        Calculator calculator = new Calculator();
+
+        //when
+        int result = calculator.times(1, 3);
+
+        //then
+        assertThat(result, is(3));
+    }
 }
